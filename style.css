@@ -7,8 +7,23 @@ body {
 
 .container {
     width: 100vw;
-    height: 100vh;
+    height: 75vh;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container > * {
+    width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
     justify-content: center;
     align-items: center;
 }
@@ -18,8 +33,9 @@ body {
 
 .btn {
     font-size: medium;
-    padding: 10px;
-    width: 200px;
+    padding: 5px;
+    width: 100%;
+    margin: 2.5px;
     border: solid cyan;
     text-align: center;
     background-color: cyan;
