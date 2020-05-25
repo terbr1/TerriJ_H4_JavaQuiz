@@ -1,0 +1,31 @@
+body {
+    background-color: aliceblue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Container */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Buttons */
+
+.btn {
+    font-size: medium;
+    padding: 10px;
+    width: 200px;
+    border: solid cyan;
+    text-align: center;
+    background-color: cyan;
+    text-decoration: none;
+
+}
+
+
+
