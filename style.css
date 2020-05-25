@@ -1,5 +1,5 @@
 body {
-    background-color: aliceblue;
+    background-color: darkcyan;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -34,13 +34,18 @@ body {
 .btn {
     font-size: medium;
     padding: 5px;
-    width: 100%;
+    width: 20%;
     margin: 2.5px;
-    border: solid cyan;
+    border: solid black;
     text-align: center;
-    background-color: cyan;
+    background-color: whitesmoke;
     text-decoration: none;
+    color: darkslategrey;
 
+}
+
+.btn:hover {
+    cursor: pointer;
 }
 
 
