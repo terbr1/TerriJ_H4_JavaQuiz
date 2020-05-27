@@ -1,7 +1,16 @@
 body {
+    background-image: url("https://cdn.hipwallpaper.com/i/53/41/A1wskh.jpg");
     background-color: darkcyan;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-size: cover;
 }
+
+h1 {
+    color: whitesmoke;
+    
+    }
+
+
 
 /* Container */
 
@@ -24,6 +33,14 @@ body {
 }
 
 .flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+#rules {
+    width: 100vw;
+    height: 75vh;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
