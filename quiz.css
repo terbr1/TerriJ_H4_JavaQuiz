@@ -20,3 +20,12 @@
 .choice-container:hover {
     cursor: pointer;
 }
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.justify-center {
+    justify-content: center;
+    align-items: center;
+}
