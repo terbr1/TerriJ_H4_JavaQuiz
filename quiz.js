@@ -2,9 +2,12 @@ var questionEl = document.getElementById("question");
 var choicesEl = document.getElementsByClassName("choice-text");
 
 var currentQuestion = {};
+var acceptingAnswers = true;
+var score = 0;
+var questionCounter = 0;
 var availableQuestions = [];
-var answers = true;
 
+ 
 var questions = [
     {
         question: "What is question 1?",
@@ -101,18 +104,64 @@ var questions = [
 var maxQuestions = 10;
 
 // Start Game 
+function startGame(){
+    questionCounter = 0;
+    score = 0;
+    availableQuestions = [...questions];
+    console.log(availableQuestions);
+    getNewQuestion();
+}
 
-function startgame() {
+
+function getNewQuestion() {
+    questionCounter++;
+    var questionIndex = Math.floor(Math.random()* availableQuestions.length);
+    currentQuestion = availableQuestions[questionIndex];
+    question.innerText = currentQuestion.question;
+
+};
+startGame();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*function startgame() {
     availableQuestions = [...questions];
     console.log(availableQuestions);
     getNewQuestion();
 };
 
 function getNewQuestion() {
-    questionEl = availableQuestions[questions];
-    currentQuestion++; //increment to one
-    if (currentQuestion===questions.length){
-        console.log("it worked")
+    var questioninterval = setInterval(() => {
+        questionEl.textContent = availableQuestions[questions];
+        currentQuestion++;
+        question.innerText = currentQuestion.question;
+
+        if (currentQuestion===questions.length){
+              console.log("it worked"); 
+
+
     }
-}
-startgame();
+})
+};
+
+  /*  //questionEl = availableQuestions[questions];
+    //currentQuestion++; //increment to one
+    //question.innerText = currentQuestion.question;
+    //if (currentQuestion===questions.length){
+      //  console.log("it worked") */
