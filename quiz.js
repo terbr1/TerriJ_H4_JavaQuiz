@@ -20,10 +20,10 @@ var questions = [
   },
   {
     question: "What function allows you to print defined variables or messages?",
-    choice1: "Console Log",
-    choice2: "type",
-    choice3: "C",
-    choice4: "D",
+    choice1: "Console.Log",
+    choice2: "document.type",
+    choice3: "function writeresult() ",
+    choice4: "document.getElementsByID",
     answer: 1,
   },
   {
