@@ -50,10 +50,11 @@ var questions = [
     choice4: "D",
     answer: 4,
   },
-];
+  ];
 
-var startingTime = 2;
-var totalTime = startingTime * 60;
+var startingTime = 200
+var totalTime = startingTime *60
+
 
 // Start Game
 function startGame() {
@@ -64,19 +65,21 @@ function startGame() {
 //get question
 function getNewQuestion() {
   if (availableQuestions.length === 0) {
-    localStorage.setItem("mostRecentScore", score);
+    localStorage.setItem("mostRecentScore",score);
     //score page
     return window.location.assign("score.html");
   }
   questionCounter++;
-  var timeEl = setInterval(function () {
-    totalTime--;
-    timeEl.textContent = totalTime;
-
-    if (totalTime === 0) {
-      return window.location.assign("score.html");
-    }
-  }, 1000);
+  var timeEl = setInterval
+   (function() {
+     totalTime--;
+     timeEl.textContent = totalTime;
+     
+     if(totalTime === 0){
+       return window.location.assign("score.html") 
+      }
+     
+   }, 1000);
   var questionIndex = Math.floor(Math.random() * availableQuestions.length);
   currentQuestion = availableQuestions[questionIndex];
   question.innerText = currentQuestion.question;
@@ -96,15 +99,10 @@ choicesEl.forEach((choice) => {
     acceptingAnswers = false;
     var selectedChoice = e.target;
     var selectedAnswer = selectedChoice.dataset["number"];
-
-    var isItCorrect = "incorrect";
-    if (selectedAnswer === currentQuestion.answer) {
-      isItCorrect = "correct";
-    }
-    selectedChoice.parentElement.classList.add(classToApply);
-    selectedChoice.parentElement.classList.remove(classToApply);
+    
     getNewQuestion();
   });
 });
+
 
 startGame();
