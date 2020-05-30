@@ -1,3 +1,8 @@
+h2 {
+    color: lightsteelblue;
+}
+
+
 .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
@@ -9,12 +14,13 @@
 
 .choice-prefix {
     padding: 1px 5px;  
-    background-color: lightskyblue;
+    background-color: darkcyan;
     color: white
 }
 
 .choice-text {
-    padding: 0.5px;
+    padding: 1px;
+    width: 100%;
 }
 
 .choice-container:hover {
@@ -28,4 +34,17 @@
 .justify-center {
     justify-content: center;
     align-items: center;
+}
+
+#hud {
+    display: flex;
+}
+
+.hud-prefix, .hud-main-text {
+    text-align: center;
+    font-size: 30px;
+}
+
+p { 
+    font-size: 14px;
 }
