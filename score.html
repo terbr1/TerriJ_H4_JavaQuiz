@@ -4,12 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>High Score</title>
-    <link ref="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
     <div class="container">
         <div id="highscore" class="flex-center flex-column">
-
+            <h1 id="High Score"> 0 </h1>
+            <form>
+                <input type="text" name="initials" id="initials"/>
+            </form>
+            <button type="submit" class="btn" id="submitbtn" onclick="savescore">Submit</button>
+        </div>
+    </div>
+    <div class="container">
+        <div id="highscore">
+            <a class="btn" href="quiz.html">Start Again</a>
         </div>
     </div>
     <script src="score.js"></script>
